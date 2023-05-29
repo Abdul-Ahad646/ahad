@@ -1,0 +1,55 @@
+[
+    {
+        "name": "Dashboard",
+        "icon": "icon-home4",
+        "url": "index.php"
+    },
+    {
+        "name": "POS",
+        "icon": "icon-printer4",
+        "url": "pos_system.php"
+    },
+    {
+        "name": "Category",
+        "icon": "icon-list",
+        "submenu": [
+            {
+                "name": "Add Category",
+                "url": "add_category.php"
+            },
+            {
+                "name": "Categories",
+                "url": "categories.php"
+            }
+        ]
+    },
+    {
+        "name": "Product",
+        "icon": "icon-basket",
+        "submenu": [
+            {
+                "name": "Add Product",
+                "url": "add_product.php"
+            },
+            {
+                "name": "Products",
+                "url": "product.php"
+            }
+        ]
+    }
+    ,
+    {
+        "name": "Slider",
+        "icon": "icon-home4",
+        "submenu": [
+            {
+                "name": "Add Slide Image",
+                "url": "slider_create.php"
+            },
+            {
+                "name": "Sliders",
+                "url": "slider_index.php"
+            }
+        ]
+    }
+]
