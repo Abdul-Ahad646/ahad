@@ -27,29 +27,35 @@ if(upload($target, $destination)){
 }
 
 
-$alt = $_POST['alt'];
-$title = $_POST['title'];
-$caption = $_POST['caption'];
+$product_Name = $_POST['product_Name'];
 
-$products = [
+$product_code = $_POST['product_code'];
+$product_price = $_POST['product_price'];
+$product_condition = $_POST['product_condition'];
+$product_availability = $_POST['product_availability'];
+$product_category = $_POST['product_category'];
+$product = [
             
             'uuid'=>uniqid(),
-            'src'=>$url,
+            'src'=>$src,
             'product_name'=>$product_Name,
-            'product_code'=>$ ,
+            'product_code'=>$product_code ,
             'price'=>$product_price,
-            'product_condition'=> $,
-            'avalibility'=>$,
-            'product_category'=>$
+            'product_condition'=> $product_condition,
+            'avalibility'=>$product_availability,
+            'product_category'=>$product_category
             
         ];
 
 
-$dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'slideritems.json');
-$slides = json_decode($dataSlides);
+        $dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'product.json');
+        
+$products= json_decode($dataSlides);
+// $products = json_decode($dataSlides);
 // finding unique ids
-foreach($slides as $aslide){
-    $ids[] = $aslide->id;
+
+foreach($products as $aproduct){
+    $ids[] = $aproduct->id;
 }
 
 sort($ids);
@@ -57,17 +63,17 @@ $lastIndex = count($ids)-1;
 $highestId = $ids[$lastIndex];
 $curentUniqueId = $highestId+1;
 
-$slide['id'] = $curentUniqueId ;
+$products['id'] = $curentUniqueId ;
 
-$slides[] = (object) $slide;
-$data_slides = json_encode($slides);
+$products[] = (object) $product;
+$data_slides = json_encode($products);
 
 
 
-if(file_exists($datasource."slideritems.json")){
-    $result = file_put_contents($datasource."slideritems.json",$data_slides);
+if(file_exists($datasource."product.json")){
+    $result = file_put_contents($datasource."product.json",$data_slides);
     if($result){
-        redirect("slider_index.php");
+        redirect("product.php");
     }
 }else{
     echo "File not found";

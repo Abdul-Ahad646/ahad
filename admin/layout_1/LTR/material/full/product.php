@@ -90,6 +90,7 @@
 							<tbody>
 
 <?php
+
     foreach($products as $key=>$product):
         // if(0 == $key){
         //  $active = 'active';

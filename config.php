@@ -34,7 +34,7 @@ function flush_session($key){
     $_SESSION[$key]='';
     return $value; 
 }
-$webroot = "http://campus_canteen.test".DIRECTORY_SEPARATOR;
+$webroot = "http://ahad.test".DIRECTORY_SEPARATOR;
 $docroot = $_SERVER['DOCUMENT_ROOT'];
 $partials = $docroot.DIRECTORY_SEPARATOR.'admin'.DIRECTORY_SEPARATOR . 'partials'. DIRECTORY_SEPARATOR;
 $partials_frontend = $docroot.DIRECTORY_SEPARATOR.'canteen-frontend'.DIRECTORY_SEPARATOR.'partials'.DIRECTORY_SEPARATOR;
