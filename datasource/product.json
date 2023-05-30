@@ -1,14 +1,1 @@
-[
-    {
-    "id": 10,
-    "uuid": "646eee55888b8",
-    "src": "646eee55881ec_donat.jpg",
-    "product_name": "aaaaaaaa",
-    "product_code": "aassssss",
-    "price": "sssssssssss",
-    "product_condition": "sssssssssss",
-    "avalibility": "sssssssssss",
-    "product_category": "sssssssssss"
-    
-}
-]
+[{"id":10,"uuid":"646eee55888b8","src":"646eee55881ec_donat.jpg","product_name":"aaaaaaaa","product_code":"aassssss","price":"sssssssssss","product_condition":"sssssssssss","avalibility":"sssssssssss","product_category":"sssssssssss"},{"id":11,"uuid":"64758f5135c93","src":"64758f5134ee5_fruits.jpg","product_name":"a","product_code":"a","price":"a","product_condition":"a","avalibility":"a","product_category":"1"},{"uuid":"647593c13897e","src":"647593c138523_Thai-Soup.jpg","product_name":"c\\wec","product_code":"fe","price":"cwece","product_condition":"vwergver","avalibility":"vever","product_category":"1","id":12}]
