@@ -47,7 +47,7 @@
 							</div>
 
 			                <div class="card-body">
-			                	<form action="add_product_processor.php" method="post" enctype="multipart/form-data">
+			                	<form action="add_donat_processor.php" method="post" enctype="multipart/form-data">
 								<action="add_product_processor.php">
                                     <div class="form-group">
 										<label>Product Category</label>

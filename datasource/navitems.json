@@ -28,13 +28,38 @@
         "icon": "icon-basket",
         "submenu": [
             {
-                "name": "Add Product",
+                "name": "Products",
+                "url": "product.php"
+            },
+            {
+                "name": "Donat",
+                "url": "add_donat_show.php"
+            },
+            {
+                "name": "Fruits",
                 "url": "add_product.php"
             },
             {
-                "name": "Products",
-                "url": "product.php"
+                "name": "Nasos",
+                "url": "add_product.php"
+            },
+            {
+                "name": "Rice",
+                "url": "add_product.php"
+            },
+            {
+                "name": "Salad",
+                "url": "add_product.php"
+            },
+            {
+                "name": "Shup",
+                "url": "add_product.php"
+            },
+            {
+                "name": "Add Product",
+                "url": "add_product.php"
             }
+            
         ]
     }
     ,

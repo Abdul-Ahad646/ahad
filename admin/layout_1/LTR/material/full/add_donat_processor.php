@@ -48,7 +48,7 @@ $product = [
         ];
 
 
-        $dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'product.json');
+        $dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'donat.json');
         
 $products= json_decode($dataSlides);
 // $products = json_decode($dataSlides);
@@ -70,10 +70,10 @@ $data_slides = json_encode($products);
 
 
 
-if(file_exists($datasource."product.json")){
-    $result = file_put_contents($datasource."product.json",$data_slides);
+if(file_exists($datasource."donat.json")){
+    $result = file_put_contents($datasource."donat.json",$data_slides);
     if($result){
-        redirect("product.php");
+        redirect("add_donat_show.php");
     }
 }else{
     echo "File not found";
