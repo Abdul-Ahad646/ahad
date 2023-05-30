@@ -51,6 +51,7 @@ $product = [
         $dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'product.json');
         
 $products= json_decode($dataSlides);
+
 // $products = json_decode($dataSlides);
 // finding unique ids
 
@@ -62,10 +63,14 @@ sort($ids);
 $lastIndex = count($ids)-1;
 $highestId = $ids[$lastIndex];
 $curentUniqueId = $highestId+1;
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa88a547a5c203bf8c5e63f7a4f6787347f52505
 $product['id'] = $curentUniqueId ;
 
 $products[] = (object) $product;
+
 $data_slides = json_encode($products);
 
 
