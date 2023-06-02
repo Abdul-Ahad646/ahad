@@ -121,7 +121,7 @@
                       <img src="../global_assets/img/corn.jpg" alt=""  width="100%" height="100%">
                     </div>
                     <h3 class="card-title">Shup</h3>
-                    <a href=".../layout_1/shup.html" class="btn bg-warning text-dark">See Product</a>
+                    <a href=".../layout_1/shup.php" class="btn bg-warning text-dark">See Product</a>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@
                       <img src="../global_assets/img/nasos.jpg" alt=""  width="100%" height="100%">
                     </div>
                     <h3 class="card-title">Nasos</h3>
-                    <a href=".../layout_1/nasos.html" class="btn bg-warning text-dark">See Product</a>
+                    <a href=".../layout_1/nasos.php" class="btn bg-warning text-dark">See Product</a>
                   </div>
                 </div>
               </div>
@@ -145,7 +145,7 @@
                       <img src=".../global_assets/img/salad.jpg" alt=""  width="100%" height="100%">
                     </div>
                     <h3 class="card-title">Salad</h3>
-                    <a href=".../layout_1/salad.html" class="btn bg-warning text-dark">See Product</a>
+                    <a href=".../layout_1/salad.php" class="btn bg-warning text-dark">See Product</a>
                     
                   </div>
                 </div>
@@ -158,7 +158,7 @@
                       <img src="../global_assets/img/rice.jpg" alt=""  width="100%" height="100%">
                     </div>
                     <h3 class="card-title">Rice</h3>
-                    <a href=".../layout_1/rice.html" class="btn bg-warning text-dark">See Product</a>
+                    <a href=".../layout_1/rice.php" class="btn bg-warning text-dark">See Product</a>
                   </div>
                 </div>
               </div>
@@ -170,7 +170,7 @@
                       <img src="../global_assets/img/fruits.jpg" alt=""  width="100%" height="100%">
                     </div>
                     <h3 class="card-title">Fruits</h3>
-                    <a href=".../layout_1/fruits.html" class="btn bg-warning text-dark">See Product</a>
+                    <a href=".../layout_1/fruits.php" class="btn bg-warning text-dark">See Product</a>
                   </div>
                 </div>
               </div>
@@ -181,7 +181,7 @@
                       <img src="../global_assets/img/donat.jpg" alt=""  width="100%" height="100%">
                     </div>
                     <h3 class="card-title">Donat</h3>
-                    <a href=".../layout_1/donat.html" class="btn bg-warning text-dark">See Product</a>
+                    <a href=".../layout_1/donat.php" class="btn bg-warning text-dark">See Product</a>
                   </div>
                 </div>
               </div>      

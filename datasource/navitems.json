@@ -41,7 +41,7 @@
             },
             {
                 "name": "Nasos",
-                "url": "add_product.php"
+                "url": "add_nasos_show.php"
             },
             {
                 "name": "Rice",

@@ -1,56 +1,15 @@
-<?php include_once($_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'config.php') ?>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<?php include_once($partials.'head.php') ?>
-
-<body>
-
-<?php include_once($partials.'nav.php') ?>
-
-
-	<!-- Page content -->
-	<div class="page-content">
-
-	<?php include_once($partials.'sidebar.php') ?>
-
-
-
-		<!-- Main content -->
-		<div class="content-wrapper">
-
-
-		<?php include_once($partials.'pageHeader.php') ?>
-
-
-			<!-- Content area -->
-			<div class="content">
-
-			<?php //include_once($partials.'chart.php') ?>
-
-
-
-				<!-- Dashboard content -->
-				<?php include_once($partials.'donat_parsial.php') ?>		
-				
-				<?php
-    $dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'nasos.json');
-    $products = json_decode($dataSlides);
-	
-   
-
-?>
-			<!-- /content area -->
+<?php
+					$dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'donat.json');
+					$products = json_decode($dataSlides);
+				?>
+			</div>
 			<div class="row">
 					<div class="col-xl-12">
 						
             <!-- Bordered table -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Product</h5>
+						<h5 class="card-title">DONAT</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -137,16 +96,3 @@
 
 					</div>
 				</div>
-
-
-			<?php include_once($partials.'footer.php') ?>
-
-
-		</div>
-		<!-- /main content -->
-
-	</div>
-	<!-- /page content -->
-
-</body>
-</html>

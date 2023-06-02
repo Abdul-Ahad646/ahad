@@ -13,20 +13,37 @@
 
 
     <?php include_once($partials_frontend.'nav_product.php') ?>
+    <?php
+    $dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'nasos.json');
+    $products = json_decode($dataSlides);
+?>
 
+  </div>
+  
+   
+   <?php
 
-      <div class="container ">
+    foreach($products as $key=>$product):
+        if(0 == $key){
+            $active = 'active';
+        }else{
+            $active = '';
+        }
+   ?> 
+
+        <div class="container col-lg-7 ">
         <div class="row mt-5">
             <div class="col-md-5 ">
-                <img src="../global_assets/img/corn.jpg" alt="">
+            <img src="<?=$webroot."uploads/".$product->src?>" alt="<?=$product->alt?>">
             </div>
             <div class="col-md-7">
-                <p class="new text-center">NEW</p>
-                <h2>Corn Shup</h2>
-                <p>Product Code: CC1</p>
-                <p class="price">USD $10.00</p>
-                <p><b>Availability:</b> In Stock</p>
-                <p><b>Condition:</b> New</p>
+                <p class="new text-center" ><?=$product->product_condition?></p>
+                
+                <h2><?=$product->product_name?></h2>
+                <p><?=$product->product_code?></p>
+                <p class="price"><?=$product->price?></p>
+                <p><?=$product->avalibility?></p>
+                <p><b>Condition: </b><?=$product->product_condition?> </p>
                 <label for="">
                     Quantity:
                 </label>
@@ -35,47 +52,11 @@
             </div>
         </div>
       </div>
-      <div class="container ">
-        <div class="row mt-5">
-            <div class="col-md-5 ">
-                <img src="../global_assets/img/corn.jpg" alt="">
-            </div>
-            <div class="col-md-7">
-                <p class="new text-center">NEW</p>
-                <h2>Corn Shup</h2>
-                <p>Product Code: CC1</p>
-                <p class="price">USD $10.00</p>
-                <p><b>Availability:</b> In Stock</p>
-                <p><b>Condition:</b> New</p>
-                <label for="">
-                    Quantity:
-                </label>
-                <input type="text" value="1">
-                <button type="button" class="btn btn-default cart">Add to cart</button>
-            </div>
-        </div>
       </div>
-      <div class="container ">
-        <div class="ab row mt-5">
-            <div class="col-md-5 ">
-                <img src="../global_assets/img/corn.jpg" alt="">
-            </div>
-            <div class="col-md-7">
-                <p class="new text-center">NEW</p>
-                <h2>Corn Shup</h2>
-                <p>Product Code: CC1</p>
-                <p class="price">USD $10.00</p>
-                <p><b>Availability:</b> In Stock</p>
-                <p><b>Condition:</b> New</p>
-                <label for="">
-                    Quantity:
-                </label>
-                <input type="text" value="1">
-                <button type="button" class="btn btn-default cart">Add to cart</button>
-            </div>
-        </div>
-      </div>
-
-      <?php include_once($partials_frontend.'footer.php') ?>
-</body>
-</html>
+    </div>
+   
+<?php
+    endforeach
+?>
+<?php include_once($partials_frontend.'footer.php') ?>
+ 

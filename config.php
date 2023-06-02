@@ -40,3 +40,4 @@ $partials = $docroot.DIRECTORY_SEPARATOR.'admin'.DIRECTORY_SEPARATOR . 'partials
 $partials_frontend = $docroot.DIRECTORY_SEPARATOR.'canteen-frontend'.DIRECTORY_SEPARATOR.'partials'.DIRECTORY_SEPARATOR;
 $datasource = $docroot.DIRECTORY_SEPARATOR."datasource".DIRECTORY_SEPARATOR;
 $uploads = $docroot.DIRECTORY_SEPARATOR."uploads".DIRECTORY_SEPARATOR;
+$product_show = $docroot.DIRECTORY_SEPARATOR.'admin'.DIRECTORY_SEPARATOR . 'layout_1'. DIRECTORY_SEPARATOR;

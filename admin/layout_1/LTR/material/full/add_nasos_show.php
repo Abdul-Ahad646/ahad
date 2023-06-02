@@ -1,4 +1,13 @@
 <?php include_once($_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'config.php') ?>
+<?php
+    $dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'nasos.json');
+    $products = json_decode($dataSlides);
+   
+
+?>
+
+
+
 
 
 
@@ -34,17 +43,7 @@
 
 
 				<!-- Dashboard content -->
-				<?php include_once($partials.'donat_parsial.php') ?>		
-				
-				<?php
-    $dataSlides = file_get_contents($datasource.DIRECTORY_SEPARATOR.'nasos.json');
-    $products = json_decode($dataSlides);
-	
-   
-
-?>
-			<!-- /content area -->
-			<div class="row">
+				<div class="row">
 					<div class="col-xl-12">
 						
             <!-- Bordered table -->
@@ -64,7 +63,7 @@
 					 
 					
 						 
-					<a href="add_donat.php">Add Product</a>
+					<a href="add_nasos.php">Add Product</a>
 					<a href="slider_download_pdf.php">Download PDF</a>
 					<!-- <a href="slider_download_xl.php">Download xl</a> -->
 					
@@ -137,6 +136,10 @@
 
 					</div>
 				</div>
+				<!-- /dashboard content -->
+
+			</div>
+			<!-- /content area -->
 
 
 			<?php include_once($partials.'footer.php') ?>
