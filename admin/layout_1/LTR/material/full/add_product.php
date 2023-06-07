@@ -57,7 +57,7 @@
                                             <option>Nasos</option>
                                             <option>Rice</option>
 											<option>Salad</option>
-											<option>Shup</option>
+											<option>Shup</option>      
                                         </select>
 									</div>
                                     <div class="form-group">

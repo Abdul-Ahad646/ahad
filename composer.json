@@ -1,4 +1,9 @@
 {
+    "autoload": {
+        "psr-4": {
+            "BITM\\SEIP12\\":"src/"
+        }
+    },
     "require": {
         "mpdf/mpdf": "^8.1"
     }

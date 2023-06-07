@@ -25,29 +25,25 @@
                 <form action="">
                     <div class="form-row">
                         <div class="col-lg-7">
-                            <input type="text" placeholder="Enter your name" class="form-control my-2 p-2">
+                            <input type="text" name="Name" placeholder="Enter your name" class="form-control my-2 p-2">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-lg-7">
-                            <input type="email" placeholder="Email-Address" class="form-control my-2 p-2">
+                            <input type="email" name="email" placeholder="Email-Address" class="form-control my-2 p-2">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-lg-7">
-                            <input type="text" placeholder="Address" class="form-control my-2 p-2">
+                            <input type="text" name="address" placeholder="Address" class="form-control my-2 p-2">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-lg-7">
-                            <input type="password" placeholder="Enter password" class="form-control my-2 p-2">
+                            <input type="password" name="password" placeholder="Enter password" class="form-control my-2 p-2">
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-lg-7">
-                            <input type="password" placeholder="Confirm password" class="form-control my-2 p-2">
-                        </div>
-                    </div>
+                    
 
                     <div class="form-row">
                         <div class="col-lg-7">

@@ -63,10 +63,7 @@ sort($ids);
 $lastIndex = count($ids)-1;
 $highestId = $ids[$lastIndex];
 $curentUniqueId = $highestId+1;
-<<<<<<< HEAD
 
-=======
->>>>>>> aa88a547a5c203bf8c5e63f7a4f6787347f52505
 $product['id'] = $curentUniqueId ;
 
 $products[] = (object) $product;
